@@ -12,3 +12,29 @@ A continuación se listará el software que se utilizó para la elaboración del
 * En caso de desear interfaz gráfica para utilizar Mysql -> MySQL Workbench 8.0 CE
 
 ## Pasos para modificar el proyecto
+
+Primeramente se debe clonar este repositorio o bien, descargar el código comprimido.
+
+Una vez descargado o clonado, para poder realizar cambios al proyecto es necesario utilizar un editor que permita modificar los archivos de extensión .py, para lo cual se utilizó PyCharm por las funcionalidades que provee para ejecutar Python.
+Una vez abierto el proyecto y dentro de PyCharm, se debe verificar que se tenga un intérprete configurado tanto para el proyecto de servidor como para el de cliente. Para ello se debe proceder a la pestaña File -> Settings -> nombreDelProyecto -> Python Interpreter y, en caso de no tener uno, seleccionar un interprete de Python para el proyecto.
+Seguidamente y en la misma ventana que se nos mostró para agregar el intérprete, a la extrema derecha se tiene un simbolo de "+" en el cual se pueden descargar e instalar librerías al proyecto. Para el servidor se requiere tener las siguientes librerías:
+* EasyTkinter
+* future
+* mysql-connector-python
+* pip
+* protobuf
+* setuptools
+* six
+
+Para el cliente se requieren las siguientes librerías:
+* EasyTkinter
+* future
+* pip
+* protobuf
+* setuptools
+* six
+
+El siguiente paso consiste en la creación de la base de datos que utiliza el servidor.
+Para ello se debe ejecutar MySQL Workbench o simplemente el shell de MySQL y ejecutar el script de la base de datos que se encuentra en el repositorio.
+
+Una vez hecho todo lo anterior el usuario ya puede realizar los cambios que considere necesarios, iniciando con el archivo "Configuración" del proyecto Servidor, ya que este contiene las credenciales para el acceso al servidor de base de datos que se tiene para guardar los datos de la simulación.
