@@ -11,7 +11,7 @@ A continuación se listará el software que se utilizó para la elaboración del
 * MySql Server 8.0
 * En caso de desear interfaz gráfica para utilizar Mysql -> MySQL Workbench 8.0 CE
 
-## Pasos para modificar el proyecto
+## Pasos para instalar y modificar el proyecto
 
 Primeramente se debe clonar este repositorio o bien, descargar el código comprimido.
 
@@ -38,3 +38,11 @@ El siguiente paso consiste en la creación de la base de datos que utiliza el se
 Para ello se debe ejecutar MySQL Workbench o simplemente el shell de MySQL y ejecutar el script de la base de datos que se encuentra en el repositorio.
 
 Una vez hecho todo lo anterior el usuario ya puede realizar los cambios que considere necesarios, iniciando con el archivo "Configuración" del proyecto Servidor, ya que este contiene las credenciales para el acceso al servidor de base de datos que se tiene para guardar los datos de la simulación.
+
+## Ejecutar el proyecto
+Para ejecutar el proyecto Servidor desde PyCharm, simplemente se da click derecho sobre el archivo "main.py" y se selecciona la opción "Run".
+
+Para ejecutar el proyecto Cliente desde PyCharm, simplemente se da click derecho sobre el archivo "main.py" y se selecciona la opción "Run".
+
+## Resultados
+Una vez que se tienen los proyectos corriendo, el Servidor mostrará una ventana con 2 botones que permitirán mostrar tanto los clientes que se han conectado al servicio como los datos de los archivos que cada cliente ha detectado. Por otro lado, el cliente mostrará varias opciones para hacer pocible la programación y la ejecución inmediata de los escaneos. Para descripciones más gráficas, acceda al manual de usuario.
